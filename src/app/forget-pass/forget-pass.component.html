@@ -1,3 +1,4 @@
+<link href="forget-pass.component.css" rel="stylesheet" />
 <div class="toolbar">
     <img
     alt="Logo COVEICyDET"
@@ -7,9 +8,31 @@
 
 <div class="main_div">
     <div class="text_div">
-
+        <p>Recuperación de acceso a la Plataforma del Padron Veracruzano de Investigadores</p>
     </div>
-    <div class="login_div">
-
+    <div class="form_div">
+        <form class="forget_form" method="post">
+            <h1>Recuperación de contraseña</h1>
+            <input
+                style="margin-bottom: 0px;"
+                id="email_input"
+                type="email"
+                [(ngModel)] = "email"
+                name = "email"
+                placeholder="Correo electronico"
+                required = "required"
+            />
+            <p style="text-align: right; margin-top: 0px;"><a href="#">Enviar codigo</a></p>
+            <input 
+                style="margin-bottom: 0px;"
+                id="code_input"
+                type="text"
+                [(ngModel)] = "code"
+                placeholder="Codigo de verificación"
+                required = "required"
+            />
+            <p style="text-align: right; margin-top: 0px"><a href="#">Verificar</a></p>
+            
+        </form>
     </div>
 </div>
