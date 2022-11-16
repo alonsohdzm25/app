@@ -7,5 +7,71 @@
 </div>
 
 <div class="main_div">
-    
+    <form id="register_form" action="post">
+        <h1>Registro</h1>
+        <input
+            id="nombre_input"
+            type="nombre"
+            [(ngModel)] = "nombre"
+            name = "nombre"
+            placeholder="Nombre"
+            required = "required"
+        />
+        <input
+            id="ap_input"
+            type="apellido"
+            [(ngModel)] = "aPaterno"
+            name = "aPaterno"
+            placeholder="Apellido Paterno"
+            required = "required"
+        />
+        <input
+            id="am_input"
+            type="apellido"
+            [(ngModel)] = "aMaterno"
+            name = "aMaterno"
+            placeholder="Apellido Materno"
+            required = "required"
+        />
+        <input
+            id="rfc_input"
+            type="rfc"
+            [(ngModel)] = "rfc"
+            name = "rfc"
+            placeholder="RFC"
+            required = "required"
+        />
+        <input
+            id="email_input"
+            type="email"
+            [(ngModel)] = "email"
+            name = "email"
+            placeholder="Correo electronico"
+            required = "required"
+        />
+        <input
+            id="emailC_input"
+            type="email"
+            [(ngModel)] = "emailC"
+            name = "emailC"
+            placeholder="Confirmar correo electronico"
+            required = "required"
+        />
+        <input
+            id="password_input"
+            type="password"
+            [(ngModel)] = "password"
+            name = "password"
+            placeholder="Contraseña"
+            required = "required"
+        />
+        <input
+            id="passwordC_input"
+            type="password"
+            [(ngModel)] = "passwordC"
+            name = "password"
+            placeholder="Confirmar Contraseña"
+            required = "required"
+        />
+    </form>
 </div>
