@@ -19,8 +19,7 @@ export class LoginComponent implements OnInit {
   }
 
   login(){
-    console.log(this.rfc);
-    console.log(this.password);
+    alert("Click Boton Login");
   }
 
 }
