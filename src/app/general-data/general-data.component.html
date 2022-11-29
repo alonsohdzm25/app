@@ -1,43 +1,46 @@
-<p>DATOS GENERALES</p>
-<P>DATOS PERSONALES</P>
+<link href="general-data.component.css" rel="stylesheet" />
+<div class="toolbar">
+        <img
+        alt="Logo COVEICyDET"
+        src="https://www.sev.gob.mx/media-superior/wp-content/uploads/2021/02/logo_coveicydet.png"/>
+    <p>COVEICyDET</p>
+</div>
 
-<form class="form-dato row">
+<div class="main_div">
+   <form class="general_form" action="post">
+     <h1>Información general>Datos personales.</h1> 
     
-    <div class="form-dato col-md-3">
+   <div class="input_div">
 
-       <label for="name">Nombre(s).</label>
-       <input type="text" id="name" name="user_name">
-    </div>
+       <label>Nombre(s)</label>
+       <input type="nombre" id="nombre" placeholder="Nombre" required="requiered">
+    
+       <label>Apellido Paterno.</label>
+       <input type="apellidop" id="apellidoP" placeholder="Apellido paterno" required="requiered">
+   
+       <label>Apellido Materno.</label>
+       <input type="text" id="apellidoM" placeholder="Apellido materno" required="requiered">
+   </div>
 
-    <div class="form-dato col-md-3"> 
-       <label for="apellidoP">Apellido Paterno.</label>
-       <input type="text" id="apellidoP" apellidoP="user:apellidoP">
-    </div>
+   <div class="input_div">
+       <label >RFC.</label>
+       <input type="text" id="rfc" placeholder="R.F.C" required="requiered">
+    
+       <label>CURP.</label>
+       <input type="text" id="curp" placeholder="CURP" required="requiered">
 
-    <div class="form-dato col-md-3">
-       <label for="apellidoM">Apellido Materno.</label>
-       <input type="text" id="apellidoM" apellidoM="user:apellidoM">
-    </div>
-
-    <div class="form-dato col-md-3">
-       <label for="rfc">RFC.</label>
-       <input type="text" id="rfc" rfc="user:rfc">
-    </div>
-
-    <div class="form-dato col-md-3">
-       <label for="curp">CURP.</label>
-       <input type="text" id="curp" curp="user:curp">
-    </div>
-
-    <div class="form-dato col-md-3">
-       <label for="sexo">Sexo.</label>
+       <label>Sexo.</label>
        <p><input type="radio" name="hombre" value="hombre"/> Hombre </p>
        <p><input type="radio" name="mujer" value="mujer"/> Mujer </p>
-    </div>
+  </div>
 
-    <div class="form-dato col-md-3">
-       <p><input type="button" value= "Guardar" name="guardar"/></p>
-       <p><input type="button" value= "Siguiente" name="siguiente"/></p>
+  <div class="aceptar">
+      <button type="submit">Aceptar</button>
+      
     </div>
-    
+   <div class="next">
+      <button type="submit">Siguiente</button>
+   </div>
+
    </form>
+</div>
