@@ -12,4 +12,11 @@ export class CoautorialibrosComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  agregar(){
+
+  }
+  next() {
+    
+  }
+
 }
