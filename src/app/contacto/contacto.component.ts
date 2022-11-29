@@ -29,7 +29,5 @@ export class ContactoComponent implements OnInit {
   guardar() {
 
   }
-  next() {
-    
-  }
+  next() {}
 }
