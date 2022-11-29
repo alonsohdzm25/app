@@ -1,41 +1,92 @@
 <link href="contacto.component.css" rel="stylesheet" />
 <div class="toolbar">
-        <img
-        alt="Logo COVEICyDET"
-        src="https://www.sev.gob.mx/media-superior/wp-content/uploads/2021/02/logo_coveicydet.png"/>
-    <p>COVEICyDET</p>
+   <img
+   alt="Logo COVEICyDET"
+   src="https://www.sev.gob.mx/media-superior/wp-content/uploads/2021/02/logo_coveicydet.png"/>
+   <p>COVEICyDET</p>
 </div>
 
 <div class="main_div">
-   <form class="register_form" action="post">
-      <h1>Información general>Contacto.</h1> 
+   <form class="contacto_form">
+      <h1>Informacion General / Contacto</h1>
+      
+      <div class="input_div">
+         <div>
+            <label for="email_input">Correo personal</label>
+            <input
+               id="email_input"
+               type="email"
+               [(ngModel)] = "email"
+               name = "email"
+               placeholder="Correo personal"
+               required = "required"
+            />
+         </div>
+         <div>
+            <label for="emailinst_input">Correo institucional</label>
+            <input
+               id="emailinst_input"
+               type="emailinst"
+               [(ngModel)] = "emailInst"
+               name = "emailinst"
+               placeholder="Correo institucional"
+               required = "required"
+            />
+         </div>
+         <div>
+            <label for="phone_input">Telefono</label>
+            <input
+               id="phone_input"
+               type="phone"
+               [(ngModel)] = "phone"
+               name = "phone"
+               placeholder="Telefono"
+               required = "required"
+            />
+         </div>
+      </div>
 
       <div class="input_div">
-       <label>Correo Particular.</label>
-       <input type="text" id="correop" correop="user:correop">
-    
-       <label>Correo Institucional.</label>
-       <input type="text" id="correoI" correoI="user:orreoI">
-    
-       <label>Telefono principal.</label>
-       <input type="number" id="Telefono" Telefono="user:Telefono">
-    </div>
+         <div>
+            <label for="movil_input">Correo personal</label>
+            <input
+               id="movil_input"
+               type="movil"
+               [(ngModel)] = "movil"
+               name = "movil"
+               placeholder="Celular"
+               required = "required"
+            />
+         </div>
+         <div>
+            <label for="institucion_input">Correo institucional</label>
+            <input
+               id="institucion_input"
+               type="institucion"
+               [(ngModel)] = "institucion"
+               name = "institucion"
+               placeholder="Institucion laboral"
+               required = "required"
+            />
+         </div>
+         <div>
+            <label for="adscripcion_input">Telefono</label>
+            <input
+               id="adscripcion_input"
+               type="adscipcion"
+               [(ngModel)] = "adscipcion"
+               name = "adscipcion"
+               placeholder="Adscipcion especifica"
+               required = "required"
+            />
+         </div>
+      </div>
+      
+      <div class="button_div">
+         <button type="submit" (click)="guardar()">Guardar</button>
+         <button id="next_button" type="submit" (click)="next()">Siguiente</button>
+      </div>
 
-    <div class="input_div">
-       <label >Celular.</label>
-       <input type="text" id="celular" celular="user:celular">
-   
-       <label>Institución laboral.</label>
-       <input type="text" id="institucion" institucion="user:institucion">
-    
-        <label>Adscripción especifíca.</label>
-        <input type="text" id="adscripcion" abscripcion="user:abscripcion">
-    </div>
-
-    <div class="form-contacto col-md-3">
-       <p><input type="button" value= "Guardar" name="guardar"/></p>
-       <p><input type="button" value= "Siguiente" name="siguiente"/></p>
-    </div>
-    
-   </form>
+     </form>
+  
 </div>

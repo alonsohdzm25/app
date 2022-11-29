@@ -1,42 +1,54 @@
-<P>DATOS PERSONALES</P>
+<link href="nacimiento.component.css" rel="stylesheet" />
+<div class="toolbar">
+   <img
+   alt="Logo COVEICyDET"
+   src="https://www.sev.gob.mx/media-superior/wp-content/uploads/2021/02/logo_coveicydet.png"/>
+   <p>COVEICyDET</p>
+</div>
 
-<form class="form-ncimiento row">
-
-   <div class="form-nacimiento col-md-3">
+<div class="main_div">
+   <form class="nacimiento_form">
+      <h1>Información General / Lugar de nacimiento.</h1>
+      
+    <div class="input_div">
+     <div >
       <label for="cp">C.P.</label>
       <input type="text" id="cp" cp="cp">
-   </div>
+     </div>
     
-    <div class="form-nacimiento col-md-3">
+    <div >
        <label for="pais">País.</label>
        <input type="text" id="pais" pais="pais">
     </div>
 
-    <div class="form-nacimiento col-md-3"> 
+    <div> 
        <label for="estado">Estado.</label>
        <input type="text" id="estado" estado="estado">
     </div>
-
-    <div class="form-nacimiento col-md-3">
+   </div>
+   
+   <div class="input_div">
+    <div>
        <label for="ciudad">Ciudad.</label>
        <input type="text" id="ciudad" ciudad="user:estado">
     </div>
 
-    <div class="form-nacimiento col-md-3">
+    <div>
        <label for="f-nacimiento">Fecha de nacimiento.</label>
        <input type="date" id="f-nacimiento" f-nacimiento="user:f-nacimiento">
     </div>
 
-    <div class="form-nacimiento col-md-3">
-       <label for="fm">No. FM(Extrangeros).</label>
+    <div>
+       <label for="fm">No. FM(Extranjeros).</label>
        <input type="text" id="fm" fm="user:fm">
     </div>
-
+   </div>
     
 
-    <div class="form-dato col-md-3">
-       <p><input type="button" value= "Guardar" name="guardar"/></p>
-       <p><input type="button" value= "Siguiente" name="siguiente"/></p>
-    </div>
+   <div class="button_div">
+      <button type="submit">Guardar</button>
+      <button id="next_button" type="submit" >Siguiente</button>
+   </div>
     
    </form>
+</div>

@@ -1,67 +1,80 @@
 h1{
-    font-size: 20pt;
-  }
-  .text_div{
-      display: flex;
-      position: relative;
-      justify-items: center;
-      height: 60vh;
-      width: 100%;
-      background-color: #04032E;
-      border-radius: 2.5rem 0 0 2.5rem;
-    }
-    
-    .text_div p {
-      color: white;
-      text-align: center;
-      font-size:22pt;
-      position: absolute;
-      top: 50%;
-      transform: translate(0,-85%);
-      padding: 0 3rem;
-    }
-    .form_div{
-      height: 55vh;
-      width: 100%;
-    }
-    .login_form{
-      padding: 2rem 5rem;
-    }
-    .login_form input {
-      display: block;
-      margin: 1.5rem 0;
-      width: 100%;
-      border-radius: 0.5rem;
-      padding: 0.75rem;
-      border: none;
-      box-shadow: inset -5px -5px 15px rgba(255, 255, 255, 0.8), inset 5px 5px 10px
-          rgba(0, 0, 0, 0.1);
-      border: 0 none;
-      background: #ebf5fc;
-    }
-    #pass_input {
-      margin-bottom: 0px;
-    }
-    #forget_pass{
-      text-align: right;
-      margin-bottom: 2rem;
-    }
-    .login_form button {
-      text-transform: uppercase;
-      letter-spacing: 0.15em;
-      border: none;
-      font-size: 0.875rem;
-      color: #ffffff;
-      font-weight: bold;
-      background-color: #04032E;
-      width: 100%;
-      display: block;
-      padding: 0.875rem 1rem;
-      border-radius: 1.5rem;
-      box-shadow: 3px 3px 8px #b1b1b1, -3px -3px 8px #ffffff;
-      cursor: pointer;
-      margin-bottom: 1.5rem;
-    }
-    #registrar{
-      text-align: center;
-    }
+  font-size: 20pt;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.form_div{
+  height: auto;
+  width: 100%;
+}
+.nacimiento_form{
+  padding: 2rem 5rem;
+  width: 100%;
+}
+
+.input_div {
+  width: 100%;
+  display: flex;
+  justify-content: space-around
+}
+
+.input_div div {
+  width: 100%;
+}
+
+input {
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+  width: 85%;
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+  border: none;
+  box-shadow: inset -5px -5px 15px rgba(255, 255, 255, 0.8), inset 5px 5px 10px
+      rgba(0, 0, 0, 0.1);
+  border: 0 none;
+  background: #ebf5fc;
+}
+
+label {
+  display: block;
+}
+
+.nacimiento_form button {
+  letter-spacing: 0.1em;
+  border: none;
+  font-size: 1rem;
+  color: #ffffff;
+  background-color: #04032E;
+  width: 20%;
+  display: block;
+  padding: 0.43rem 0.5rem;
+  border-radius: 0.4rem;
+  box-shadow: 3px 3px 8px #b1b1b1, -3px -3px 8px #ffffff;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  margin-top: 50px;
+}
+
+.button_div {
+  width: 100%;
+  display: flex;
+  justify-content: right;
+}
+
+#next_button {
+  margin-left: 20px;
+  letter-spacing: 0.1em;
+  border: #04032E;
+  font-size: 1rem;
+  color: #04032E;
+  background-color: #ffffff;
+  width: 20%;
+  display: block;
+  padding: 0.43rem 0.5rem;
+  border-radius: 0.4rem;
+  box-shadow: 3px 3px 8px #b1b1b1, -3px -3px 8px #ffffff;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
