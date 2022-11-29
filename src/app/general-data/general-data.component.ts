@@ -10,6 +10,7 @@ export class GeneralDataComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    
   }
 
 }
