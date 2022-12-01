@@ -1,35 +1,77 @@
+<link href="agregar-patentes.component.css" rel="stylesheet" />
+<div class="toolbar">
+        <img
+        alt="Logo COVEICyDET"
+        src="https://www.sev.gob.mx/media-superior/wp-content/uploads/2021/02/logo_coveicydet.png"/>
+    <p>COVEICyDET</p>
+</div>
 
-<p>Patentes</p>
-<form class="Agregar-patentes row">
+<div class="main_div">
+    <form class="general_form" action="post">
+        <h1>Agregar Patentes</h1> 
 
-    <div class="agregar-patentes col-md-3">
-        <label form="tipo">Tipo</label>
-        <input type="text" id="tipo" tipo="user:tipo">
-    </div>
-
-    <div class="Agregar-patentes col-md-3">
-        <label form="nombreP">Nombre del producto</label>
-        <input type="text" id="nombreP" nombreP="user:nombreP">
-    </div>
-
-    <div class="agregar-patentes col-md-3">
-        <label form="noregistro">Número de registro.</label>
-        <input type="text" id="noregistro" noregistro="user:noregistro">
-    </div>
-
-    <div class="agregar-patentes col-md-3">
-        <label form="fechaP">Fecha.</label>
-        <input type="date" id="fechaP" fechaP="user:fechaP">
-    </div>
-
-    <div class="agregar-patentes col-md-3">
-        <label form="referenciap">Referencia</label>
-        <input type="text" id="referenciap" referenciap="referenciap">
-    </div>
-
-    <div class="agregar-revista col-md-3">
-        <p><input type="button" value= "Aceptar" name="Aceptar"/></p>
-        <p><input type="button" value= "Cancelar" name="Cancelar"/></p>
+   <div class="input_div">
+     <div>
+        <label form="tipo_input">Tipo</label>
+        <input type="tipo" 
+               id="tipo_input"
+               placeholder="Tipo"
+               required="required"
+               name="tipo"
+               [(ngModel)]="tipo" 
+        />
      </div>
 
+     <div>
+        <label form="nombre_input">Nombre del producto</label>
+        <input type="text" 
+               id="nombreP" 
+               placeholder="Proyecto"
+               required="required"
+               name="nombre"
+               [(ngModel)]="nombre"
+               />
+     </div>
+   </div>
+
+   <div class="input_div">
+     <div>
+        <label form="registro_input">Número de registro.</label>
+        <input type="text" 
+               id="registro_input"
+               placeholder="No. de registro"
+               required="required"
+               name="resgistro"
+               [(ngModel)]="registro"
+               />
+     </div>
+
+     <div>
+        <label form="fecha_input">Fecha.</label>
+        <input type="date" 
+               id="fecha_input"
+               required="required"
+               name="fecha"
+               [(ngModel)]="fecha"
+               />
+     </div>
+
+     <div>
+        <label form="referencia_input">Referencia</label>
+        <input type="text" 
+               id="referencia_input" 
+               placeholder="Referencia"
+               required="required"
+               name="referencia"
+               [(ngModel)]="referencia"
+               />
+     </div>
+</div>
+
+<div class="button_div">
+    <button type="submit" (click)="guardar" >Guardar</button>
+    <button id="next_button" type="submit" (click)="next">Siguiente</button>
+ </div> 
+
 </form>
+</div>

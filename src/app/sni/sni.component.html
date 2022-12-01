@@ -1,41 +1,32 @@
-<table class="sni">
-
-    <caption>Sistema Nacional de Investigadores</caption>
-  
+<link href="sni.component.css" rel="stylesheet" />
+ <div class="toolbar">
+   <img
+   alt="Logo COVEICyDET"
+   src="https://www.sev.gob.mx/media-superior/wp-content/uploads/2021/02/logo_coveicydet.png"/>
+ <p>COVEICyDET</p>
+ </div>
+ 
+ <div class="main_div">
+   <h1>Producción científica-académica / Sistema Nacional de Investigadores.</h1>
+ 
+   <table class="table_books" border="1">
     <tr>
-  
-      <th scope="col">Año</th>
-  
+      <th>Año</th>
       <th>Nivel</th>
-
       <th> Editar </th>
-
       <th> Eliminar </th>
-
-        
     </tr>
 
-  
-    
-        <td> </td>
-    
-
       <tr>
-  
-        <th></th>
-    
-        <td> </td>
-    
-        <td> </td>
-    
-        <td> </td>
-    
+        <th>NULL</th>
+        <td> NULL</td>
+        <td> NULL</td>
+        <td> NULL</td>
       </tr>
   </table>
-  <div class="sni col-md-3">
-    <p><input type="button" value= "Agregar" name="Agregar"/></p>
-    <p><input type="button" value= "Siguiente" name="Siguiente"/></p>
+  
+  <div class="button_div">
+    <button type="submit" (click)="aceptar" >Agregar</button>
+    <button id="next_button" type="submit" (click)="siguiente" >Siguiente</button>
  </div>
   
-
-

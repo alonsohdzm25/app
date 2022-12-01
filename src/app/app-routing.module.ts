@@ -47,7 +47,7 @@ const routes: Routes = [
   { path: 'libros', component: AgregarLibrosComponent },
   { path: 'agregar-obtencion-de-grados', component: AgregarObtencionGradosComponent },
   { path: 'agregar-patentes', component: AgregarPatentesComponent },
-  { path: 'revistas-indexadas', component: AgregarRevistaComponent },
+  { path: 'agregar-revistas-indexadas', component: AgregarRevistaComponent },
   { path: 'agregar-sni', component: AgregarSNIComponent },
   { path: 'coautoria-de-libros', component: CoautorialibrosComponent },
   { path: 'contacto', component: ContactoComponent },

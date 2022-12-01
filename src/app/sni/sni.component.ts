@@ -11,5 +11,9 @@ export class SNIComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  
+aceptar(){
+}
+siguiente(){
+}
 }

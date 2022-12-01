@@ -1,31 +1,69 @@
-<p>Implementación técnologica.</p>
-<form class="Agregar-implementacion row">
 
-    <div class="agregar-implementacion col-md-3">
-        <label form="tipoI">Tipo</label>
-        <input type="text" id="tipoI" tipoI="user:tipoI">
-    </div>
+<link href="agregar-implementacion-tecnologica.component.css" rel="stylesheet" />
+<div class="toolbar">
+        <img
+        alt="Logo COVEICyDET"
+        src="https://www.sev.gob.mx/media-superior/wp-content/uploads/2021/02/logo_coveicydet.png"/>
+    <p>COVEICyDET</p>
+</div>
 
-    <div class="agregar-implementacion col-md-3">
-        <label form="nombreI">Nombre del producto.</label>
-        <input type="text" id="nombreI" nombreI="user:nombreI">
-    </div>
-
-    <div class="agregar-implementacion col-md-3">
-        <label form="numeroI">Número de registro.</label>
-        <input type="text" id="numeroI" numeroI="user:numeroI">
-    </div>
-
-    <div class="agregar-implementacion col-md-3">
-        <label form="fechaI">Fecha de registro.</label>
-        <input type="date" id="fechaI" fechaA="user:fechaI">
-    </div>
-
-    <div class="agregar-implementacion col-md-3">
-        <p><input type="button" value= "Aceptar" name="Aceptar"/></p>
-        <p><input type="button" value= "Cancelar" name="Cancelar"/></p>
+<div class="main_div">
+ <form class="general_form" action="post">
+    <h1>Agregar Implementación técnologica.</h1> 
+  
+    <div class="input_div">  
+      <div>
+        <label form="tipo_input">Tipo</label>
+        <input type="text" 
+               id="tipo_input" 
+               placeholder="Tipo"
+               required="required"
+               name="tipo"
+               [(ngModel)]="tipo"
+               />
      </div>
 
+     <div>
+        <label form="nombre_input">Nombre del producto.</label>
+        <input type="text" 
+               id="nombre_input" 
+               placeholder="Nombre del producto"
+               required="required"
+               name="nombre"
+               [(ngModel)]="nombre"
+               />
+     </div>
+    </div>
+
+    <div class="main_div">
+     <div>
+        <label form="numero_input">Número de registro.</label>
+        <input type="text" 
+               id="numero_input" 
+               placeholder="No. de registro"
+               required="required"
+               name="numero"
+               [(ngModel)]="numero"
+               />
+     </div>
+
+     <div>
+        <label form="fecha_input">Fecha de registro.</label>
+        <input type="date" 
+               id="fecha_input" 
+               required="required"
+               name="fecha"
+               [(ngModel)]="fecha"
+               />
+    </div>
+   </div>
+
+   <div class="button_div">
+    <button type="submit" (click)="guardar" >Guardar</button>
+    <button id="next_button" type="submit" (click)="next">Siguiente</button>
+   </div> 
+
 </form>
+</div>
 
 

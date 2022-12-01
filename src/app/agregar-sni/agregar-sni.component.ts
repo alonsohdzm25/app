@@ -11,5 +11,10 @@ export class AgregarSNIComponent implements OnInit {
 
   ngOnInit(): void {
   }
+guardar(){
 
+}
+next(){
+  
+}
 }

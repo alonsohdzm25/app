@@ -6,10 +6,25 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./agregar-libros.component.css']
 })
 export class AgregarLibrosComponent implements OnInit {
+  titulo: string;
+  autor: string;
+  editorial: string;
+  referencia: string;
 
-  constructor() { }
+  constructor() { 
+    this.titulo="";
+    this.autor="";
+    this.editorial="";
+    this.referencia="";
+  }
 
   ngOnInit(): void {
+  }
+  guardar(){
+
+  }
+  next(){
+
   }
 
 }

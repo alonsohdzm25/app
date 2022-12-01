@@ -6,10 +6,21 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./agregar-grados-academicos.component.css']
 })
 export class AgregarGradosAcademicosComponent implements OnInit {
+  titulo:string;
+  institucion:string;
 
-  constructor() { }
+  constructor() {
+    this.titulo="";
+    this.institucion="";
+   }
 
   ngOnInit(): void {
+  }
+  guardar(){
+
+  }
+  next(){
+    
   }
 
 }

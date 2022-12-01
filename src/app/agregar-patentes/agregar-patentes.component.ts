@@ -6,10 +6,27 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./agregar-patentes.component.css']
 })
 export class AgregarPatentesComponent implements OnInit {
+  tipo: string;
+  nombre: string;
+  registro:string;
+  fecha:string;
+  referencia:string;
 
-  constructor() { }
+  constructor() { 
+    this.tipo="";
+    this.nombre="";
+    this.registro="";
+    this.fecha="";
+    this.referencia="";
+  }
 
   ngOnInit(): void {
+  }
+  guardar(){
+
+  }
+  next(){
+
   }
 
 }
