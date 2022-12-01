@@ -1,29 +1,34 @@
-<p>Credencial del INE (instituto Nacional Electoral).</p>
 
-<div class="ine col-md-3">
-    <p><input type="button" value= "Seleccionar Archivo" name="ine"/></p>
-</div>
-<table class="ine">
-
- 
-    <tr>
-      <th scope="col">Archivo</th>
-
-      <th>Eliminar</th>
-    </tr>
-
-    <tr>
-      <td> </td>
-    </tr>
-  
-    <tr>
-      <td> </td>
-    </tr>
-
-    
-  </table>
-  <div class="ine col-md-3">
-    <p><input type="button" value= "Agregar" name="Agregar"/></p>
-    <p><input type="button" value= "Siguiente" name="Siguiente"/></p>
+ <link href="ine.component.css" rel="stylesheet" />
+ <div class="toolbar">
+   <img
+   alt="Logo COVEICyDET"
+   src="https://www.sev.gob.mx/media-superior/wp-content/uploads/2021/02/logo_coveicydet.png"/>
+ <p>COVEICyDET</p>
  </div>
-  
+ 
+ <div class="main_div">
+   <h1>Documentos / Adjuntar INE</h1>
+ 
+   <button type="seleecionar" >Seleccionar archivo</button>
+ 
+   <table class="table_books" border="1">
+ 
+     <tr>
+       <td class="title">Archivo</td>
+       <td class="title">Eliminar</td>
+     </tr>
+ 
+     <tr>
+       <td> Lorem Ipsum </td>
+       <td> Lorem Ipsum </td>
+     </tr>
+ 
+   </table>
+   
+   <div class="button_div">
+     <button type="submit" (click)="aceptar" >Agregar</button>
+     <button id="next_button" type="submit" (click)="siguiente" >Siguiente</button>
+  </div>
+ 
+ </div>

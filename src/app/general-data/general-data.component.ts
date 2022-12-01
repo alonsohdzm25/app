@@ -6,11 +6,28 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./general-data.component.css']
 })
 export class GeneralDataComponent implements OnInit {
+  nombre: string;
+  apellido: string;
+  apellidom: string;
+  rfc: string;
+  curp: string;
 
-  constructor() { }
+  constructor() { 
+    this.nombre="";
+    this.apellido="";
+    this.apellidom="";
+    this.rfc="";
+    this.curp="";
+  }
 
   ngOnInit(): void {
     
   }
+    guardar(){
 
+    }
+     
+   next(){
+    
+   }
 }

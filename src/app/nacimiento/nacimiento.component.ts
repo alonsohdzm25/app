@@ -6,10 +6,30 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./nacimiento.component.css']
 })
 export class NacimientoComponent implements OnInit {
+  cp: string;
+  pais: string;
+  estado: string;
+  ciudad: string;
+  nacimiento: string;
+  extranjero: string;
 
-  constructor() { }
+
+  constructor() { 
+    this.cp = "";
+    this.pais = "";
+    this.estado = "";
+    this.ciudad = "";
+    this.nacimiento = "";
+    this.extranjero = "";
+
+  }
 
   ngOnInit(): void {
   }
+  guardar(){
 
+  }
+  siguiente(){
+    
+  }
 }

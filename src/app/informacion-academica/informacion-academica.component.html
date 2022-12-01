@@ -1,7 +1,17 @@
-<p>Agregar Información Académica</p>
-<form class="form-agregar row">
+<link href="informacion-academica.component.css" rel="stylesheet" />
+<div class="toolbar">
+   <img
+   alt="Logo COVEICyDET"
+   src="https://www.sev.gob.mx/media-superior/wp-content/uploads/2021/02/logo_coveicydet.png"/>
+   <p>COVEICyDET</p>
+</div>
 
-   <div class="form-agregar col-md-3">
+<div class="main_div">
+   <form class="nacimiento_form">
+      <h1>Agregar información académica</h1>
+      
+    
+    <div class="nivel">
     <label form="nivel">Nivel.</label>
        <select>
        <option selected disabled>Selecciona una opción.</option> 
@@ -10,21 +20,35 @@
        <option>Maestria.</option>
        <option>Doctorado</option>
        </select>
-
     </div>
 
-    <div class="form-agregar col-md-3">
-       <label form="titulo">Titulo.</label>
-       <input type="text" id="titulo" titulo="user:titulo">
+    <div>
+       <label form="titulo_input">Título.</label>
+       <input 
+             type="titulo" 
+             id="titulo_input" 
+             name="titulo"
+             placeholder="Título"
+             [(ngModel)]="titulo"
+             required="requiered"
+             />
     </div>
 
-    <div class="form-agregar col-md-3">
-        <label form="institucion">Institución.</label>
-        <input type="text" id="institucion" institucion="user:institucion">
+    <div>
+        <label form="institucion_input">Institución.</label>
+        <input 
+              type="instucion" 
+              id="institucion_input"
+              name="institucion"
+              placeholder="Nombre de la institución"
+              required="requiered"
+              [(ngModel)]="institucion"
+              />
      </div>
 
-     <div class="form-agregar col-md-3">
-        <label form="año"> Año.</label>
+
+     <div >
+        <label form="año_input"> Año.</label>
         <select>
             <option selected disabled>Selecciona una opción.</option>
             <option>1</option>
@@ -32,9 +56,14 @@
             <option>3</option> 
         </select>
      </div>
-     <div class="form-agregar col-md-3">
-        <p><input type="button" value= "aceptar" name="aceptar"/></p>
-        <p><input type="button" value= "cancelar" name="cancelar"/></p>
-     </div>
+   
+     <div class="button_div">
+      <button type="submit" (click)="aceptar">Aceptar</button>
+      <button id="next_button" type="submit" (click)="cancelar">Cancelar</button>
+   </div>
+     
+
+
+    </form>
     
-</form>
+</div>

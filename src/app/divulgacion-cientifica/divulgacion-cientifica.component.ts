@@ -11,5 +11,9 @@ export class DivulgacionCientificaComponent implements OnInit {
 
   ngOnInit(): void {
   }
+aceptar(){
+}
+siguiente(){
 
+}
 }

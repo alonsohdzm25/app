@@ -1,9 +1,17 @@
-<p>DESARROLLO.</p>
-<form class="form-desarrollo row">
-    
-    <div class="form-desarrollo col-md-3">
+<link href="desarrollo.component.css" rel="stylesheet" />
+<div class="toolbar">
+        <img
+        alt="Logo COVEICyDET"
+        src="https://www.sev.gob.mx/media-superior/wp-content/uploads/2021/02/logo_coveicydet.png"/>
+    <p>COVEICyDET</p>
+</div>
 
-       <label form="p1">Area de la ciencia en la que desarrolla actividades científicas, técnologicas y/o innovación.</label>
+<div class="main_div">
+    <form class="general_form" action="post">
+    
+        <div class="input_div">
+       <div >
+       <label form="p1">Area </label>
        <select>
        <option selected disabled>Selecciona una opción.</option> 
        <option>Física, Matemáticas y Ciencias de la Tierra.</option>
@@ -14,11 +22,10 @@
        <option>Biotecnogía y ciencias agropecuarias.</option>
        <option>Ingeniería e industria.</option>
        </select>
-
     </div>
    
-    <div class="form-desarrollo col-md-3">
-        <label for="campo">Campo.</label>
+        <div >
+        <label>Campo.</label>
         <select>
             <option selected disabled>Selecciona una opción.</option>
             <option>Lógica.</option>
@@ -37,45 +44,56 @@
         </select>
     </div>
 
-    <div class="form-desarrollo col-md-3">
-        <label form="disiplina">Displina.</label>
+        <div>
+        <label form="disiplina">Disiplina.</label>
         <select>
             <option selected disabled>Selecciona una opción.</option>
             <option>1</option>
             <option>2</option>
             <option>3</option> 
         </select>
+        </div>
+    </div> 
 
+    <div class="input_div">
+     <div>
+    <label>¿Ha sido mienbro del Sistema Veracruzano de Investigadores en ediciones anteriores, SVI?</label>
+    <select>
+        <option selected disabled>Selecciona una opción.</option>
+        <option>sí</option>
+        <option>No</option> 
+    </select>
     </div>
 
-    <div class="form-desarrolladores col-md-3">
-    <label form="p2">¿Ha sido mienbro del Sistema Veracruzano de Investigadores en ediciones anteriores, SVI?</label>
-    <p><input type="radio" name="R2si" value="R2si"/> Sí </p>
-    <p><input type="radio" name="R2No" value="R2No"/> No </p>
-    </div>
-
-    <div class="form-desarrolladores col-md-3">
+    <div>
         <label form="p3">¿Participó como estudiante en algun programa de Verano de Investigación Científica?</label>
-        <p><input type="radio" name="R3si" value="Rsi"/> Sí </p>
-        <p><input type="radio" name="R3No" value="RNo"/> No </p>
+        <select>
+        <option selected disabled>Selecciona una opción.</option>
+        <option>sí</option>
+        <option>No</option> 
+    </select> 
     </div>
-    
-    <div class="form-desarrolladores col-md-3">
+    </div>
+
+    <div class="input_div">
+    <div>
      <label form="programa">¿En que programa?</label>
      <input type="text" id="programa" programa="user:programa">
     </div>
 
     <div>
-        <label form="año">¿En que año?</label>
+        <label>¿En que año?</label>
         <select>
             <option disabled selected>Selecione.</option>
             <option>2022</option>
             <option>...</option>
         </select>
     </div>
-    
-    <div class="form-dato col-md-3">
-        <p><input type="button" value= "Guardar" name="guardar"/></p>
-        <p><input type="button" value= "Siguiente" name="siguiente"/></p>
-     </div>
+</div>
+
+<div class="button_div">
+    <button type="submit" (click)="guardar" >Guardar</button>
+    <button id="next_button" type="submit" (click)="next">Siguiente</button>
+ </div>
 </form>
+</div>

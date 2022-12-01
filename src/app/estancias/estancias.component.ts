@@ -11,5 +11,9 @@ export class EstanciasComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+aceptar(){
+}
+siguiente(){
+  
+}
 }

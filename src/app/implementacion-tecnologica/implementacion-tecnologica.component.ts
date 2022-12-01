@@ -11,5 +11,11 @@ export class ImplementacionTecnologicaComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  aceptar(){
+
+  }
+  siguiente(){
+    
+  }
 
 }

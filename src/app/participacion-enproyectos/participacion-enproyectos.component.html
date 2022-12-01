@@ -1,28 +1,39 @@
-<p>Documento probatorio de la participación en proyectos.</p>
-
-<div class="proyectos col-md-3">
-    <p><input type="button" value= "Seleccionar Archivo" name="proyectos"/></p>
+<link href="participacion-enproyectos.component.css" rel="stylesheet" />
+<div class="toolbar">
+  <img
+  alt="Logo COVEICyDET"
+  src="https://www.sev.gob.mx/media-superior/wp-content/uploads/2021/02/logo_coveicydet.png"/>
+<p>COVEICyDET</p>
 </div>
-<table class="proyectos">
 
+<div class="main_div">
+  <h1>Documentos / Documento probatorio de la participación en proyectos</h1>
+
+  <button type="seleecionar" >Seleccionar archivo</button>
+
+  <table class="table_books" border="1">
+
+    <tr>
+      <td class="title">Archivo</td>
+      <td class="title">Eliminar</td>
+    </tr>
+
+    <tr>
+      <td> Lorem Ipsum </td>
+      <td> Lorem Ipsum </td>
  
-    <tr>
-      <th scope="col">Archivo</th>
-
-      <th>Eliminar</th>
     </tr>
 
     <tr>
-      <td> </td>
-    </tr>
-  
-    <tr>
-      <td> </td>
-    </tr>
+      <td> Lorem Ipsum </td>
+      <td> Lorem Ipsum </td>
 
-    
+    </tr>
   </table>
-  <div class="ine col-md-3">
-    <p><input type="button" value= "Agregar" name="Agregar"/></p>
-    <p><input type="button" value= "Siguiente" name="Siguiente"/></p>
+  
+  <div class="button_div">
+    <button type="submit" (click)="aceptar" >Agregar</button>
+    <button id="next_button" type="submit" (click)="siguiente" >Siguiente</button>
  </div>
+
+</div>

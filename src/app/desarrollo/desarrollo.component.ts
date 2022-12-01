@@ -11,5 +11,9 @@ export class DesarrolloComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  guardar(){
+  }
+  next(){
+  }
 
 }

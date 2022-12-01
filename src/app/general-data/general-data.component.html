@@ -19,7 +19,9 @@
               id="nombre_input" 
               placeholder="Nombre" 
               required="requiered" 
-              name="nombre">
+              name="nombre"
+              [(ngModel)]="nombre"
+              />
     </div>
 
     <div>
@@ -30,6 +32,7 @@
              placeholder="Apellido paterno" 
              required="requiered" 
              name="apellido"
+             [(ngModel)]="apellido"
              />
     </div>
 
@@ -40,6 +43,7 @@
               placeholder="Apellido materno" 
               required="requiered" 
               name="apelllidom"
+              [(ngModel)]="apellidom"
          />
          
    </div>
@@ -49,10 +53,12 @@
       <div>
        <label for="rfc_input">RFC.</label>
        <input 
-             type="text" 
+             type="rfc" 
              id="rfc_input" 
              placeholder="R.F.C" 
              required="requiered"
+             name="rfc"
+             [(ngModel)]="rfc"
              />
     </div>
 
@@ -63,6 +69,8 @@
              id="curp_input" 
              placeholder="CURP" 
              required="requiered"
+             name="curp"
+             [(ngModel)]="curp"
             />
       </div>
 
@@ -77,8 +85,8 @@
   </div>
 
   <div class="button_div">
-    <button type="submit" >Guardar</button>
-    <button id="next_button" type="submit" >Siguiente</button>
+    <button type="submit" (click)="guardar" >Guardar</button>
+    <button id="next_button" type="submit" (click)="next">Siguiente</button>
  </div>
 
    </form>

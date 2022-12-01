@@ -1,80 +1,37 @@
-<table class="estancias">
+<<link href="estancias.component.css" rel="stylesheet" />
+<div class="toolbar">
+  <img
+  alt="Logo COVEICyDET"
+  src="https://www.sev.gob.mx/media-superior/wp-content/uploads/2021/02/logo_coveicydet.png"/>
+<p>COVEICyDET</p>
+</div>
 
-    <caption>Estancias.</caption>
-  
+<div class="main_div">
+  <h1>Producción científica-académica / Estancias</h1>
+
+  <table class="table_books" border="1">
     <tr>
-  
-      <th scope="col">Institución</th>
-  
+      <th>Institución</th>
       <th>Proyecto</th>
-  
       <th>Fecha de inicio</th>
-      
       <th>Fecha de termino</th>
-
       <th> Editar </th>
-
       <th> Eliminar</th>
-
-        
     </tr>
 
     <tr>
-  
-      <th></th>
-  
-      <td> </td>
-  
-      <td> </td>
-  
+      <td>null</td>
+      <td>null</td>
+      <td>null</td>
+      <td>null</td>
+      <td>null</td>
+      <td>null</td>
     </tr>
-
-    <tr>
-  
-        <th></th>
-    
-        <td> </td>
-    
-        <td> </td>
-    
-      </tr>
-  
-    <tr>
-  
-      <th></th>
-  
-      <td> </td>
-  
-      <td> </td>
-  
-    </tr>
-
-    <tr>
-  
-        <th></th>
-    
-        <td> </td>
-    
-        <td> </td>
-    
-        <td> </td>
-    
-      </tr>
-
-      <tr>
-  
-        <th></th>
-    
-        <td> </td>
-    
-        <td> </td>
-    
-        <td> </td>
-    
-      </tr>
   </table>
-  <div class="n-estancias col-md-3">
-    <p><input type="button" value= "Agregar" name="Agregar"/></p>
-    <p><input type="button" value= "Siguiente" name="Siguiente"/></p>
- </div>
   
+   <div class="button_div">
+     <button type="submit" (click)="aceptar" >Agregar</button>
+     <button id="next_button" type="submit" (click)="siguiente" >Siguiente</button>
+  </div>
+ 
+ </div>

@@ -1,8 +1,14 @@
+<link href="nivel-academico.component.css" rel="stylesheet" />
+<div class="toolbar">
+  <img
+  alt="Logo COVEICyDET"
+  src="https://www.sev.gob.mx/media-superior/wp-content/uploads/2021/02/logo_coveicydet.png"/>
+<p>COVEICyDET</p>
+</div>
 
-<table class="n-academico">
-
-    <caption>Nivel Académico</caption>
-  
+<div class="main_div">
+  <h1> Información general / Nivel académico</h1>
+  <table class="table_books" border="1">
     <tr>
   
       <th scope="col">Nivel</th>
@@ -83,8 +89,8 @@
     
       </tr>
   </table>
-  <div class="n-academico col-md-3">
-    <p><input type="button" value= "Agregar" name="Agregar"/></p>
-    <p><input type="button" value= "Enviar" name="Enviar"/></p>
+  <div class="button_div">
+    <button type="submit" (click)="aceptar">Agregar</button>
+    <button id="next_button" type="submit" (click)="siguiente" >Siguiente</button>
  </div>
   

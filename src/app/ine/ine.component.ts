@@ -11,5 +11,10 @@ export class IneComponent implements OnInit {
 
   ngOnInit(): void {
   }
+ aceptar(){
 
+ }
+ siguiente(){
+  
+ }
 }

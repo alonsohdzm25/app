@@ -11,5 +11,10 @@ export class ParticipacionEnproyectosComponent implements OnInit {
 
   ngOnInit(): void {
   }
+aceptar(){
 
+}
+siguiente(){
+  
+}
 }

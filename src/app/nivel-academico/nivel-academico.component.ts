@@ -11,5 +11,12 @@ export class NivelAcademicoComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  aceptar(){
+
+  }
+
+  siguiente(){
+    
+  }
 
 }

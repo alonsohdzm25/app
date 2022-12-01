@@ -6,10 +6,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./informacion-academica.component.css']
 })
 export class InformacionAcademicaComponent implements OnInit {
+  institucion: string;
+  titulo: string;
 
-  constructor() { }
+  constructor() { 
+    this.institucion= "";
+    this.titulo= "";
+  }
 
   ngOnInit(): void {
   }
-
+aceptar(){
+}
+cancelar(){
+}
 }

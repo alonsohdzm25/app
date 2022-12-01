@@ -11,5 +11,11 @@ export class GradosAcademicosComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  aceptar(){
+
+  }
+  siguiente(){
+    
+  }
 
 }

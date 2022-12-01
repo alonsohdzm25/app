@@ -12,42 +12,83 @@
       
     <div class="input_div">
      <div >
-      <label for="cp">C.P.</label>
-      <input type="text" id="cp" cp="cp">
+      <label for="cp_input">C.P.</label>
+      <input type="cp" 
+             id="cp_input" 
+             name="cp"
+             placeholder="C.P"
+             required="requiered"
+             [(ngModel)]="cp"
+             />
      </div>
     
     <div >
-       <label for="pais">País.</label>
-       <input type="text" id="pais" pais="pais">
+       <label for="pais_input">País.</label>
+       <input 
+             type="pais" 
+             id="pais_input" 
+             name="pais"
+             placeholder="País"
+             required="requiered"
+             [(ngModel)]="pais"
+             />
     </div>
 
     <div> 
-       <label for="estado">Estado.</label>
-       <input type="text" id="estado" estado="estado">
+       <label for="estado_input">Estado.</label>
+       <input 
+             type="estado" 
+             id="estado_input" 
+             name="estado"
+             placeholder="Estado"
+             required="requiered"
+             [(ngModel)]="estado"
+             />
     </div>
    </div>
    
    <div class="input_div">
     <div>
-       <label for="ciudad">Ciudad.</label>
-       <input type="text" id="ciudad" ciudad="user:estado">
+       <label for="ciudad_input">Ciudad.</label>
+       <input 
+              type="ciudad" 
+              id="ciudad_input" 
+              name="ciudad"
+              placeholder="Ciudad"
+              required="requiered"
+              [(ngModel)]="ciudad"
+              />
     </div>
 
     <div>
-       <label for="f-nacimiento">Fecha de nacimiento.</label>
-       <input type="date" id="f-nacimiento" f-nacimiento="user:f-nacimiento">
+       <label for="nacimiento_input">Fecha de nacimiento.</label>
+       <input 
+              type="date" 
+              id="nacimiento_input" 
+              name="nacimiento"
+              placeholder="Fecha de nacimineto"
+              required="requiered"
+              [(ngModel)]="nacimiento"
+              />
     </div>
 
     <div>
-       <label for="fm">No. FM(Extranjeros).</label>
-       <input type="text" id="fm" fm="user:fm">
+       <label for="extranjero_input">No. FM(Extranjeros).</label>
+       <input 
+              type="extranjero" 
+              id="extranjero_input" 
+              name="extranjero"
+              placeholder="En caso de ser extranjero."
+              required="requiered"
+              [(ngModel)]="extranjero"
+              >
     </div>
    </div>
     
 
    <div class="button_div">
-      <button type="submit">Guardar</button>
-      <button id="next_button" type="submit" >Siguiente</button>
+      <button type="submit" (click)="guardar">Guardar</button>
+      <button id="next_button" type="submit" (click)="siguiente">Siguiente</button>
    </div>
     
    </form>
