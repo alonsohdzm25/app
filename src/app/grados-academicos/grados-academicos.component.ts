@@ -15,7 +15,7 @@ export class GradosAcademicosComponent implements OnInit {
 
   }
   siguiente(){
-    
+    window.location.href="/obtencion-de-grados"
   }
 
 }

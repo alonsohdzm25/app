@@ -10,7 +10,7 @@
    <form class="nacimiento_form">
       <h1>Agregar información académica</h1>
       
-    
+   <div class="input_div">
     <div class="nivel">
     <label form="nivel">Nivel.</label>
        <select>
@@ -33,8 +33,10 @@
              required="requiered"
              />
     </div>
-
-    <div>
+    </div> 
+ 
+       <div class="input_div">
+         <div>
         <label form="institucion_input">Institución.</label>
         <input 
               type="instucion" 
@@ -56,6 +58,7 @@
             <option>3</option> 
         </select>
      </div>
+   </div>
    
      <div class="button_div">
       <button type="submit" (click)="aceptar">Aceptar</button>

@@ -14,6 +14,7 @@ export class DesarrolloComponent implements OnInit {
   guardar(){
   }
   next(){
+    window.location.href='/formacion-academica';
   }
 
 }

@@ -14,6 +14,6 @@ export class DivulgacionCientificaComponent implements OnInit {
 aceptar(){
 }
 siguiente(){
-
+window.location.href="/implementacion-tecnologica"
 }
 }

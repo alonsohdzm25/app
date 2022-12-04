@@ -1,36 +1,65 @@
-<p>Agregar obtención de grado del candidato.</p>
-<form class="Agregar-obtencion row">
+<link href="agregar-obtencion-grados.component.css" rel="stylesheet" />
+<div class="toolbar">
+        <img
+        alt="Logo COVEICyDET"
+        src="https://www.sev.gob.mx/media-superior/wp-content/uploads/2021/02/logo_coveicydet.png"/>
+    <p>COVEICyDET</p>
+</div>
 
-   
+<div class="main_div">
+    <form class="general_form" action="post">
+       <h1>Registrar obtencion de grado del candidato</h1> 
 
-    <div class="agregar-obtencion col-md-3">
-        <label form="nombreO">Nombre.</label>
-        <input type="text" id="nombreO" nombreO="user:nombreO">
+     <div class="input_div">
+       <div>
+        <label form="nombre_input">Nombre.</label>
+        <input type="text" 
+               id="nombre_input" 
+               placeholder="Registrar nombre"
+               required="required"
+               name="nombre"
+               [(ngModel)]="nombre"
+               />
+     </div>
+
+     <div>
+        <label form="institucion_input">Institución.</label>
+        <input type="text" 
+               id="institucion_input" 
+               name="institucion"
+               placeholder="Nombre de la institución"
+               required="required"
+               [(ngModel)]="institucion"
+               />
+      </div>
     </div>
 
-    <div class="agregar-obtencion col-md-3">
-        <label form="institucionO">Institución.</label>
-        <input type="text" id="institucionO" institucionO="user:institucionO">
-    </div>
+     <div class="input_div">
+      <div>
+        <label form="año_input">Año.</label>
+        <select>
+            <option selected disabled>Selecciona una opción</option>
+            <option>1</option>
+         </select>
+     </div> 
 
-    <div class="agregar-obtencion col-md-3">
-        <label form="añoO">Año.</label>
-        <input type="date" id="añoO" añoO="user:añoO">
-    </div>
-
-    <div class="agregar-obtencion col-md-3">
-        <label form="nivelO">Nivel</label>
+     <div>
+        <label form="nivel_input">Nivel</label>
         <select>
         <option selected disabled>Selecciona una opción</option>
         <option>1</option>
-    </select>
+     </select>
     </div>
+</div>
 
-    <div class="agregar-obtencion col-md-3">
-        <p><input type="button" value= "Aceptar" name="Aceptar"/></p>
-        <p><input type="button" value= "Cancelar" name="Cancelar"/></p>
-     </div>
+    <div class="button_div">
+        <button type="submit" (click)="guardar" >Guardar</button>
+        <button id="next_button" type="submit" (click)="next">Siguiente</button>
+    </div> 
+   
 
 </form>
+</div>
+
 
 

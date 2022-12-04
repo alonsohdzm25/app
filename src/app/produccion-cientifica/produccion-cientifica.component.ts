@@ -11,5 +11,11 @@ export class ProduccionCientificaComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  aceptar(){
+
+  }
+  siguiente(){
+    
+  }
 
 }

@@ -14,6 +14,6 @@ export class EstanciasComponent implements OnInit {
 aceptar(){
 }
 siguiente(){
-  
+  window.location.href="/ine"
 }
 }

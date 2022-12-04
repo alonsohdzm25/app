@@ -11,5 +11,10 @@ export class ObtencionGradosComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  agregar(){
 
+  }
+next(){
+  window.location.href="/sni"
+}
 }

@@ -33,6 +33,9 @@ import { ProduccionCientificaComponent } from './produccion-cientifica/produccio
 import { ProyectosInvestigacionComponent } from './proyectos-investigacion/proyectos-investigacion.component';
 import { RevistaComponent } from './revista/revista.component';
 import { SNIComponent } from './sni/sni.component';
+import { DomicilioComponent } from './domicilio/domicilio.component';
+import { FormacionAcademicaComponent } from './formacion-academica/formacion-academica.component';
+import { ProtectosDeInvestigacionComponent } from './protectos-de-investigacion/protectos-de-investigacion.component';
 
 const routes: Routes = [
   { path: "", component: AppComponent, pathMatch: "full"},
@@ -44,7 +47,7 @@ const routes: Routes = [
   { path: 'agregar-estancias', component: AgregarEstanciasComponent },
   { path: 'agregar-grados-academicos', component: AgregarGradosAcademicosComponent },
   { path: 'agregar-implementacion-tecnologica', component: AgregarImplementacionTecnologicaComponent },
-  { path: 'libros', component: AgregarLibrosComponent },
+  { path: 'agregar-libros', component: AgregarLibrosComponent },
   { path: 'agregar-obtencion-de-grados', component: AgregarObtencionGradosComponent },
   { path: 'agregar-patentes', component: AgregarPatentesComponent },
   { path: 'agregar-revistas-indexadas', component: AgregarRevistaComponent },
@@ -65,9 +68,12 @@ const routes: Routes = [
   { path: 'participacion-en-proyectos', component: ParticipacionEnproyectosComponent },
   { path: 'patentes', component: PatentesComponent },
   { path: 'produccion-cientifica', component:ProduccionCientificaComponent },
-  { path: 'proyectos-de-investigacion', component: ProyectosInvestigacionComponent },
+  { path: 'proyectos-investigacion', component: ProyectosInvestigacionComponent },
   { path: 'revistas', component: RevistaComponent },
-  { path: 'sni', component: SNIComponent }
+  { path: 'sni', component: SNIComponent },
+  {path: 'domicilio', component:DomicilioComponent},
+  {path: 'formacion-academica', component:FormacionAcademicaComponent},
+  {path:'proyectos-de-investigacion', component:ProtectosDeInvestigacionComponent},
 ];
 
 @NgModule({

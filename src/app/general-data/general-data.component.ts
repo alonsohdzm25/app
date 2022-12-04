@@ -28,6 +28,7 @@ export class GeneralDataComponent implements OnInit {
     }
      
    next(){
+    window.location.href="/lugar-nacimiento"
     
    }
 }

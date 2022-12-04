@@ -37,6 +37,9 @@ import { IneComponent } from './ine/ine.component';
 import { AdscripcionInstitucionalComponent } from './adscripcion-institucional/adscripcion-institucional.component';
 import { ParticipacionEnproyectosComponent } from './participacion-enproyectos/participacion-enproyectos.component';
 import { ProduccionCientificaComponent } from './produccion-cientifica/produccion-cientifica.component';
+import { DomicilioComponent } from './domicilio/domicilio.component';
+import { FormacionAcademicaComponent } from './formacion-academica/formacion-academica.component';
+import { ProtectosDeInvestigacionComponent } from './protectos-de-investigacion/protectos-de-investigacion.component';
 
 @NgModule({
   declarations: [
@@ -72,7 +75,10 @@ import { ProduccionCientificaComponent } from './produccion-cientifica/produccio
     IneComponent,
     AdscripcionInstitucionalComponent,
     ParticipacionEnproyectosComponent,
-    ProduccionCientificaComponent
+    ProduccionCientificaComponent,
+    DomicilioComponent,
+    FormacionAcademicaComponent,
+    ProtectosDeInvestigacionComponent
   ],
   imports: [
     BrowserModule,

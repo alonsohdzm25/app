@@ -6,10 +6,27 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./agregar-divulgacion-cientifica.component.css']
 })
 export class AgregarDivulgacionCientificaComponent implements OnInit {
+  nombre:string;
+  autor:string;
+  revista:string;
+  fecha:string;
+  termino:string;
 
-  constructor() { }
+  constructor() {
+    this.nombre="";
+    this.autor="";
+    this.revista="";
+    this.fecha="";
+    this.termino="";
+   }
 
   ngOnInit(): void {
+  }
+  guardar(){
+
+  }
+  next(){
+
   }
 
 }

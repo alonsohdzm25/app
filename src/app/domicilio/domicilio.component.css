@@ -24,7 +24,7 @@ h1{
     width: 100%;
   }
   
-  select {
+  select{
     margin-top: 0.5rem;
     margin-bottom: 1.5rem;
     width: 85%;
@@ -35,8 +35,9 @@ h1{
         rgba(0, 0, 0, 0.1);
     border: 0 none;
     background: #ebf5fc;
+
   }
-  input{
+  input {
     margin-top: 0.5rem;
     margin-bottom: 1.5rem;
     width: 85%;
@@ -90,3 +91,4 @@ h1{
     cursor: pointer;
     margin-bottom: 1rem;
   }
+  

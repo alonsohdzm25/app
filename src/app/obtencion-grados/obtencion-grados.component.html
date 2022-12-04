@@ -12,19 +12,12 @@
  <table class="table_books" border="1">
     <tr>
   
-      <th scope="col">Nombre</th>
-  
+      <th scope="col">Nivel</th>
+      <th> Título</th>
       <th>Institución</th>
-  
       <th>Año</th>
-      
-      <th> Nivel </th>
-
       <th> Editar </th>
-
       <th> Eliminar </th>
-
-        
     </tr>
 
   
@@ -57,7 +50,7 @@
       </tr>
   </table>
   <div class="button_div">
-    <button type="submit" >Agregar</button>
-    <button id="next_button" type="submit" >Siguiente</button>
+    <button type="submit" (click)="agregar()">Agregar</button>
+    <button id="next_button" type="submit" (click)="next()" href="/sni()">Siguiente</button>
  </div>
 </div>

@@ -6,10 +6,24 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./agregar-estancias.component.css']
 })
 export class AgregarEstanciasComponent implements OnInit {
+   institucion:string;
+   proyecto:string;
+   fecha:string;
+   termino:string;
 
-  constructor() { }
+  constructor() {
+    this.institucion="";
+    this.proyecto="";
+    this.fecha="";
+    this.termino="";
+   }
 
   ngOnInit(): void {
   }
+  guardar(){
 
+  }
+  next(){
+    
+  }
 }

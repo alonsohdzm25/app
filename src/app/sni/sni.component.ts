@@ -15,5 +15,6 @@ export class SNIComponent implements OnInit {
 aceptar(){
 }
 siguiente(){
+  window.location.href="/estancias"
 }
 }

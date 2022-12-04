@@ -11,5 +11,11 @@ export class PatentesComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  guardar(){
+
+  }
+  next(){
+    window.location.href="/revistas"
+  }
 
 }

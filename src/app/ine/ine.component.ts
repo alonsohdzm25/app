@@ -15,6 +15,6 @@ export class IneComponent implements OnInit {
 
  }
  siguiente(){
-  
+  window.location.href="/adscripcion-institucional"
  }
 }

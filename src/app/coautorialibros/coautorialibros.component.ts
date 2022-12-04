@@ -16,7 +16,7 @@ export class CoautorialibrosComponent implements OnInit {
 
   }
   next() {
-    
+    window.location.href="proyectos-de-investigacion"
   }
 
 }

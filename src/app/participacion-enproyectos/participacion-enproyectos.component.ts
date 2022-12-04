@@ -15,6 +15,6 @@ aceptar(){
 
 }
 siguiente(){
-  
+  window.location.href="/produccion-cientifica"
 }
 }

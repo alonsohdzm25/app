@@ -11,5 +11,9 @@ export class AdscripcionInstitucionalComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+aceptar(){
+}
+siguiente(){
+  window.location.href="/participacion-en-proyectos"
+}
 }

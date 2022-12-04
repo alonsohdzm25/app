@@ -30,6 +30,6 @@ export class NacimientoComponent implements OnInit {
 
   }
   siguiente(){
-    
+  window.location.href="/domicilio"
   }
 }

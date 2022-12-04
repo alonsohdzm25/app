@@ -32,6 +32,7 @@ export class RegisterComponent implements OnInit {
 
   register () {
     alert("Estimado: "+this.nombre+" "+ this.aPaterno+" "+this.aMaterno + " sus datos fueron capturados correctamente")
+    window.location.href="/datos-generales"
   }
   cancelar(){
     alert("Cancel")

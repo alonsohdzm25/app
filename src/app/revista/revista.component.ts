@@ -15,6 +15,6 @@ aceptar(){
 
 }
 siguiente(){
-  
+  window.location.href="/divulgacion-cientifica"
 }
 }
