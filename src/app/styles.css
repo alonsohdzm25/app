@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300&display=swap');
+/* You can add global styles to this file, and also import other style files */
+
+*{
+  box-sizing: border-box;
+  font-family: 'Inria Sans', sans-serif;
+}
+html,
+body {
+  background: #fff;
+}
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  background-color: #04032E;
+}
+
+.toolbar p {
+  font-size: 16pt;
+  font-family: 'Inria Sans', sans-serif;
+}
+
+.toolbar img{
+  height: 40px;
+  width: 64px;
+  margin-right: 5pt;
+}
+
+.main_div{
+  display: flex;
+  min-width: 300px;
+  max-width: 100%;
+  min-height: 60vh;
+  margin: 3rem 3rem;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 2.5rem;
+  background-color: #ecf0f3;
+  box-shadow: 13px 13px 20px #04032E, -13px -13px 20px #ffffff;
+  color: black;
+}
