@@ -38,7 +38,7 @@ import { FormacionAcademicaComponent } from './formacion-academica/formacion-aca
 import { ProtectosDeInvestigacionComponent } from './protectos-de-investigacion/protectos-de-investigacion.component';
 
 const routes: Routes = [
-  { path: "", component: AppComponent, pathMatch: "full"},
+  { path: "", component: LoginComponent, pathMatch: "full"},
   { path: 'login', component: LoginComponent},
   { path: 'register', component: RegisterComponent },
   { path: 'forget-password', component: ForgetPassComponent },
