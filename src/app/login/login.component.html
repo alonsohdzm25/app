@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="../styles.css" rel="stylesheet">
 <link href="login.component.css" rel="stylesheet" />
 <div class="toolbar">
         <img
@@ -30,11 +31,11 @@
                 required = "required"
             />
             <div id="forget_pass">
-                <a href="#">Olvide mi contraseña</a>
+                <a href="/forget-password">Olvide mi contraseña</a>
             </div>
             <button type="submit" (click)="login()">Log In</button>
             <div id="registrar">
-                <p>¿No esta registrado? <a href="../register/register.component.html">Registrate aquí</a></p>
+                <p>¿No esta registrado? <a href="/register">Registrate aquí</a></p>
             </div>
         </form>
     </div>

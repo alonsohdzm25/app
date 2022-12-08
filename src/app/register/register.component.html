@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="../styles.css" rel="stylesheet">
 <link href="register.component.css" rel="stylesheet" />
 <div class="toolbar">
     <img
@@ -7,5 +8,84 @@
 </div>
 
 <div class="main_div">
-    
+    <form class="register_form" action="post">
+        <h1>Registro</h1>
+        
+        <div class="input_div">
+            <input
+            id="nombre_input"
+            type="nombre"
+            [(ngModel)] = "nombre"
+            name = "nombre"
+            placeholder="Nombre"
+            required = "required"
+            />
+            <input
+                id="ap_input"
+                type="apellido"
+                [(ngModel)] = "aPaterno"
+                name = "aPaterno"
+                placeholder="Apellido Paterno"
+                required = "required"
+            />
+            <input
+                id="am_input"
+                type="apellido"
+                [(ngModel)] = "aMaterno"
+                name = "aMaterno"
+                placeholder="Apellido Materno"
+                required = "required"
+            />
+        </div>
+        <div class="input_div">
+            <input
+            id="rfc_input"
+            type="rfc"
+            [(ngModel)] = "rfc"
+            name = "rfc"
+            placeholder="RFC"
+            required = "required"
+            />
+            <input
+                id="email_input"
+                type="email"
+                [(ngModel)] = "email"
+                name = "email"
+                placeholder="Correo electronico"
+                required = "required"
+            />
+            <input
+                id="emailC_input"
+                type="email"
+                [(ngModel)] = "emailC"
+                name = "emailC"
+                placeholder="Confirmar correo electronico"
+                required = "required"
+            />
+        </div>
+        <div class="input_div">
+            <input
+            id="password_input"
+            type="password"
+            [(ngModel)] = "password"
+            name = "password"
+            placeholder="Contraseña"
+            required = "required"
+            />
+            <input
+                id="passwordC_input"
+                type="password"
+                [(ngModel)] = "passwordC"
+                name = "password"
+                placeholder="Confirmar Contraseña"
+                required = "required"
+            />
+        </div>
+        <div class="button_div">
+            <button type="submit" (click)="register()" href="/datos-generales()">Aceptar</button>
+        </div>
+        <div class="button_div">
+            <p>¿Ya esta registrado? <a href="/login">Ingrese aqui</a></p>
+        </div>
+    </form>
 </div>

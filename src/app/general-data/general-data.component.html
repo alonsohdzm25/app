@@ -1,0 +1,92 @@
+<link rel="stylesheet" href="/src/styles.css">
+<link href="general-data.component.css" rel="stylesheet" />
+<div class="toolbar">
+        <img
+        alt="Logo COVEICyDET"
+        src="https://www.sev.gob.mx/media-superior/wp-content/uploads/2021/02/logo_coveicydet.png"/>
+    <p>COVEICyDET</p>
+</div>
+
+<div class="main_div">
+   <form class="general_form" action="post">
+     <h1>Información general/Datos personales.</h1> 
+    
+   <div class="input_div"> 
+    <div>
+      <label for="nombre_input">Nombre(s).</label>
+       <input 
+              type="nombre" 
+              id="nombre_input" 
+              placeholder="Nombre" 
+              required="requiered" 
+              name="nombre"
+              [(ngModel)]="nombre"
+              />
+    </div>
+
+    <div>
+       <label for="apellido_input">Apellido Paterno.</label>
+       <input 
+             type="apellidop" 
+             id="apellido_input" 
+             placeholder="Apellido paterno" 
+             required="requiered" 
+             name="apellido"
+             [(ngModel)]="apellido"
+             />
+    </div>
+
+    <div>
+       <label for="apellidoM_input">Apellido Materno.</label>
+       <input type="apellidoM" 
+              id="apellidoM_input" 
+              placeholder="Apellido materno" 
+              required="requiered" 
+              name="apelllidom"
+              [(ngModel)]="apellidom"
+         />   
+   </div>
+  </div>
+
+   <div class="input_div">
+      <div>
+       <label for="rfc_input">RFC.</label>
+       <input 
+             type="rfc" 
+             id="rfc_input" 
+             placeholder="R.F.C" 
+             required="requiered"
+             name="rfc"
+             [(ngModel)]="rfc"
+             />
+    </div>
+
+      <div>
+       <label for="curp_input">CURP.</label>
+       <input 
+             type="text" 
+             id="curp_input" 
+             placeholder="CURP" 
+             required="requiered"
+             name="curp"
+             [(ngModel)]="curp"
+            />
+      </div>
+
+      <div>
+       <label for="sexo_input">Sexo.</label>
+       <select>
+        <option>Selecciona una opción.</option>
+        <option value="Hombre">Hombre</option>
+        <option value="Mujer">Mujer</option>
+       </select>
+      </div>
+  </div>
+
+  <div class="button_div">
+    <button type="submit" (click)="guardar">Guardar</button>
+    <button id="next_button" type="submit" (click)="next()" href="/lugar-nacimiento()">Siguiente</button>
+ </div>
+
+   </form>
+</div>
