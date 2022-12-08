@@ -38,46 +38,73 @@ import { FormacionAcademicaComponent } from './formacion-academica/formacion-aca
 import { ProtectosDeInvestigacionComponent } from './protectos-de-investigacion/protectos-de-investigacion.component';
 
 const routes: Routes = [
-  { path: "", component: LoginComponent, pathMatch: "full"},
-  { path: 'login', component: LoginComponent},
+  { path: '', component: AppComponent, pathMatch: 'full' },
+  { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
   { path: 'forget-password', component: ForgetPassComponent },
-  { path: 'adscripcion-institucional', component: AdscripcionInstitucionalComponent },
-  { path: 'agregar-divulgacion-cientifica', component: AgregarDivulgacionCientificaComponent },
+  {
+    path: 'adscripcion-institucional',
+    component: AdscripcionInstitucionalComponent,
+  },
+  {
+    path: 'agregar-divulgacion-cientifica',
+    component: AgregarDivulgacionCientificaComponent,
+  },
   { path: 'agregar-estancias', component: AgregarEstanciasComponent },
-  { path: 'agregar-grados-academicos', component: AgregarGradosAcademicosComponent },
-  { path: 'agregar-implementacion-tecnologica', component: AgregarImplementacionTecnologicaComponent },
+  {
+    path: 'agregar-grados-academicos',
+    component: AgregarGradosAcademicosComponent,
+  },
+  {
+    path: 'agregar-implementacion-tecnologica',
+    component: AgregarImplementacionTecnologicaComponent,
+  },
   { path: 'agregar-libros', component: AgregarLibrosComponent },
-  { path: 'agregar-obtencion-de-grados', component: AgregarObtencionGradosComponent },
+  {
+    path: 'agregar-obtencion-de-grados',
+    component: AgregarObtencionGradosComponent,
+  },
   { path: 'agregar-patentes', component: AgregarPatentesComponent },
   { path: 'agregar-revistas-indexadas', component: AgregarRevistaComponent },
   { path: 'agregar-sni', component: AgregarSNIComponent },
   { path: 'coautoria-de-libros', component: CoautorialibrosComponent },
   { path: 'contacto', component: ContactoComponent },
-  { path: 'desarrollo', component:DesarrolloComponent },
+  { path: 'desarrollo', component: DesarrolloComponent },
   { path: 'divulgacion-cientifica', component: DivulgacionCientificaComponent },
   { path: 'estancias', component: EstanciasComponent },
   { path: 'datos-generales', component: GeneralDataComponent },
   { path: 'grados-academicos', component: GradosAcademicosComponent },
-  { path: 'implementacion-tecnologica', component: ImplementacionTecnologicaComponent },
+  {
+    path: 'implementacion-tecnologica',
+    component: ImplementacionTecnologicaComponent,
+  },
   { path: 'ine', component: IneComponent },
   { path: 'informacion-academica', component: InformacionAcademicaComponent },
   { path: 'lugar-nacimiento', component: NacimientoComponent },
   { path: 'nivel-academico', component: NivelAcademicoComponent },
   { path: 'obtencion-de-grados', component: ObtencionGradosComponent },
-  { path: 'participacion-en-proyectos', component: ParticipacionEnproyectosComponent },
+  {
+    path: 'participacion-en-proyectos',
+    component: ParticipacionEnproyectosComponent,
+  },
   { path: 'patentes', component: PatentesComponent },
-  { path: 'produccion-cientifica', component:ProduccionCientificaComponent },
-  { path: 'proyectos-investigacion', component: ProyectosInvestigacionComponent },
+  { path: 'produccion-cientifica', component: ProduccionCientificaComponent },
+  {
+    path: 'proyectos-investigacion',
+    component: ProyectosInvestigacionComponent,
+  },
   { path: 'revistas', component: RevistaComponent },
   { path: 'sni', component: SNIComponent },
-  {path: 'domicilio', component:DomicilioComponent},
-  {path: 'formacion-academica', component:FormacionAcademicaComponent},
-  {path:'proyectos-de-investigacion', component:ProtectosDeInvestigacionComponent},
+  { path: 'domicilio', component: DomicilioComponent },
+  { path: 'formacion-academica', component: FormacionAcademicaComponent },
+  {
+    path: 'proyectos-de-investigacion',
+    component: ProtectosDeInvestigacionComponent,
+  },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
