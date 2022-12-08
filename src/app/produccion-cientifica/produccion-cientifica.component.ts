@@ -14,8 +14,8 @@ export class ProduccionCientificaComponent implements OnInit {
   aceptar(){
 
   }
-  siguiente(){
-    
+  enviar(){
+    alert("Estimado candidato su informacion a sido enviada!")
   }
 
 }

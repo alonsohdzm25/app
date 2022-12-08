@@ -23,7 +23,8 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "src/app/styles.css"
             ],
             "scripts": []
           },
@@ -90,7 +91,8 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "src/app/styles.css"
             ],
             "scripts": []
           }
@@ -99,10 +101,5 @@
     }
   },
   "cli": {
-<<<<<<< HEAD
-    "analytics": "21040d83-7908-48a7-a8f1-131e6e167ee8"
-=======
-    "analytics": "de827b42-f716-42a9-ab4b-d579d172932f"
->>>>>>> 1ec3ab066b096c3c7d5421083052ba62d8536f80
   }
 }
