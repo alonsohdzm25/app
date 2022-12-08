@@ -18,6 +18,6 @@ export class LoginComponent implements OnInit {
 
   login() {
     alert('Click Boton Login');
-    window.location.href = '/general-data';
+    window.location.href = '/datos-generales';
   }
 }
